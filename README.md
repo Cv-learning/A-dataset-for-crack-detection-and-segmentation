@@ -124,3 +124,7 @@ if __name__ == "__main__":
 You can also directly use the code provided in this repository for model training. In addition, you can call other codes in the repository to implement custom training for various segmentation models, such as classic models including UNet, DeepLabV3, PSPNet, etc.
 
 The training results of some models in this repository are as follows:
+
+<img src="./model_comparison_analysis.png"  />
+
+<img src="./segmentation_model_comparison.png"  />
