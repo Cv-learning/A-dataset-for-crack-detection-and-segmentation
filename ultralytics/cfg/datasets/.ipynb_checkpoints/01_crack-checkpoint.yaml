@@ -1,0 +1,10 @@
+# crack_detection.yaml
+path: ../001_datasets  # 数据集根目录路径
+train: images/train     # 训练集图像路径
+val: images/val         # 验证集图像路径
+
+# 类别数量
+nc: 1  # 只有一个类别（裂缝）
+
+# 类别名称
+names: ['Crack']  # 类别名为"crack"（裂缝）
