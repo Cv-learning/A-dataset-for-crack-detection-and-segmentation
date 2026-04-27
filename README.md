@@ -1,10 +1,29 @@
 # A-dataset-for-crack-detection-and-segmentation
 
-This code repository contains the image data and supporting code for training computer vision models, which are used in the paper *Post-Earthquake Bridge Damage Diagnosis via Multi-Domain Fusion of UAV-Based Crack Detection and Finite Element Surrogate Modeling*.
+This repository contains the dataset used in the paper  
+**"Post-Earthquake Bridge Damage Diagnosis via Multi-Domain Fusion of UAV-Based Crack Detection and Finite Element Surrogate Modeling"** (Engineering Structures, under review).
 
-The crack detection dataset (crack dataset) includes 11,584 annotated crack images. Image files are stored in the `images` folder, and the corresponding annotation files are placed in the `labels` folder.
+## Dataset Overview
+- Total number of images: **> 10,000**
+- Image resolution: 640×640 pixels
+- Includes crack images from public benchmarks (CFD, Crack500, DeepCrack) and field‑collected UAV imagery of bridge components (decks, piers, etc.)
+- Annotations: bounding boxes (YOLO format) and pixel‑wise segmentation masks (PNG)
 
-The crack segmentation dataset (crack segmentation dataset) contains 4,634 images for crack segmentation tasks. Original images and segmentation annotation files are stored in the `images` and `masks` folders respectively.
+## GitHub Display Limitation
+Due to a standard limitation of the GitHub web interface, **only the first 1,000 files** are shown when browsing the repository directly.  
+The remaining images are **still present** in the repository and can be accessed by:
+
+- Clicking the **"Load more"** button at the bottom of the file list (repeatedly) to progressively load additional files; or  
+- Cloning the repository locally, where all files will be fully visible.
+
+## Citation
+If you use this dataset in your research, please cite the original paper:
+
+> Liu, Z., et al. (2026). Post-Earthquake Bridge Damage Diagnosis via Multi-Domain Fusion of UAV-Based Crack Detection and Finite Element Surrogate Modeling. *Engineering Structures* (under review).
+
+For questions or issues, please contact the authors via the repository issues section.
+
+---
 
 When training YOLO11n, YOLO12n and RT-DETR models, you can train custom models based on the ultralytics library by creating adapted yaml configuration files.
 
