@@ -72,7 +72,7 @@ class Tuner:
         >>>     data="coco8.yaml",
         >>>     epochs=10,
         >>>     iterations=300,
-        >>>     mongodb_uri="mongodb+srv://user:pass@cluster.mongodb.net/",
+        >>>     mongodb_uri=" ",
         >>>     mongodb_db="ultralytics",
         >>>     mongodb_collection="tune_results"
         >>> )
@@ -139,7 +139,7 @@ class Tuner:
             f"{self.prefix}💡 Learn about tuning at https://docs.ultralytics.com/guides/hyperparameter-tuning"
         )
 
-    def _connect(self, uri: str = "mongodb+srv://username:password@cluster.mongodb.net/", max_retries: int = 3):
+    def _connect(self, uri: str = " ", max_retries: int = 3):
         """Create MongoDB client with exponential backoff retry on connection failures.
 
         Args:
